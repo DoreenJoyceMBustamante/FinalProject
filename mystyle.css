@@ -49,9 +49,9 @@ h6 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#imageone{
-    height:210px;
-    width:300px;
+#video1{
+    width:200px;
+    height:260px; 
     padding:2px;
     margin:5px;
     float:left;
