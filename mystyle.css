@@ -20,6 +20,10 @@ li {
     float:left;
 }
 
+li:hover {
+    transform: scale(1.2);
+}
+
 li a {
     display:block;
     padding:8px;
@@ -120,6 +124,13 @@ nav ul{
     margin:30px;
     height:170px;
     width:220px;
+}
+
+#help1:hover, #help2:hover, #help3:hover, #help4:hover {
+    transform: scale(1.5);
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
 }
 
 #help1{
