@@ -27,7 +27,7 @@ li a {
     padding:8px;
     color:#3B3030;
     
-    background-color:linen;
+    background-color:rgba(250,240,230,0.7);
     text-decoration:none;
 }
 
@@ -83,7 +83,7 @@ p {
     padding: 20px;
     max-width: 1000px;
     margin: 20px auto;
-    background-color:linen;
+    background-color:rgba(250,240,230,0.7);
     background-origin: border-box;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     color: #3B3030;
@@ -213,4 +213,58 @@ audio {
 
 audio::-webkit-media-controls-panel {
     background-color:rgb(48, 26, 11);
+}
+
+.app {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(250,240,230,0.7);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding:30px; 
+    box-sizing: border-box;  
+}
+
+.app h1 {
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(48, 26, 11);
+    padding-bottom: 20px;
+}
+
+.quiz h3 {
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.btn {
+    color: rgb(48, 26, 11);
+    background-color:rgba(0, 0, 0, 0.041);
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid rgb(48, 26, 11);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3b303067;
+}
+
+#next {
+    background-color: rgb(48, 26, 11);
+    color: rgba(250,240,230,0.7);
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
 }
