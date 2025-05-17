@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bridging the Gap: Insights on Poverty and Solutions</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <div class="container">
+        <header>
+        <div>
+            <img id="logo" src="Images/logo.jpg" alt="Logo">
+            <h2 id="head">Bridging the Gap: Insights on Poverty and Solutions</h2>
+        </div>
+        </header>
+
+        <nav>
+        <ul>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a>|</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a>|</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a>|</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a>|</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+        </nav>
+
+        <br />
+
+        <form id="signupForm">
+            <label>First Name* <input type="text" id="firstName" class="sign" /></label>
+            <span id="firstNameError" class="error"></span>
+          
+            <label>Last Name* <input type="text" id="lastName" class="sign" /></label>
+            <span id="lastNameError" class="error"></span>
+          
+            <label>Email* <input type="email" id="email" class="sign" /></label>
+            <span id="emailError" class="error"></span>
+          
+            <label class="sign">Sex*:
+                <input type="radio" name="sex" value="Male"> Male
+                <input type="radio" name="sex" value="Female"> Female
+                <input type="radio" name="sex" value="Prefer not to say"> Prefer not to say
+            </label>
+            <span id="sexError" class="error"></span>
+          
+            <label class="sign">Why do you support this campaign?*:
+                <textarea id="whySupport"></textarea>
+            </label>
+            <span id="whySupportError" class="error"></span>
+          
+            <button type="submit">Join the Campaign</button>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

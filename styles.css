@@ -1,0 +1,148 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 120px;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    background-color: white;
+    height:250px;
+    width: 1200px;
+    border-radius:6px;
+    border:solid gray 2px;
+}
+
+body::before {
+    content: "";
+    background: url('Images/head.jpg') no-repeat center center;
+    background-size: cover;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(8px);
+}
+
+#logo {
+    height:200px;
+    width:200px;
+    padding:3px;
+}
+
+.sign {
+    font-weight:bold;
+}
+
+#signupForm, .profile-info {
+    background-color:rgba(237, 235, 235, 0.5);
+    display:block;
+    border-radius:5%;
+    padding:50px;
+    border:solid gray 2px;
+}
+
+h2 {
+    float:right;
+    padding-top: 70px;
+    padding-right: 350px;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+li {
+    float:left;
+    padding-left: 70px;
+}
+
+li a {
+    display:block;
+    padding:8px;
+    color:#3B3030;
+    text-decoration:none;
+}
+
+a[href$="html"]:hover {
+    transition-duration:0.5s;
+    transform: scale(1.2);
+    color:rgb(147, 134, 134);
+    text-decoration: underline;
+}
+
+a:link {
+    color:#3B3030;
+}
+
+.services {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+  
+.tagline {
+    font-style: italic;
+    color: #6a1b9a;
+}
+  
+form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+  
+button {
+    background: #6a1b9a;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+  
+button:hover {
+    background: #4a0072;
+}
+  
+.sex {
+    margin-bottom: 1rem;
+}
+  
+.error {
+    color: red;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.25rem;
+}
+  
+.profile-info p {
+    margin: 0.5rem 0;
+}
+  
