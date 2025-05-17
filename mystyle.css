@@ -1,21 +1,32 @@
-:root{
-    background-image: url(Images/background.jpeg);
+body {
+    padding:20px;
 }
 header {
-    background-image: url(Images/div_bg.jpeg);
     height:165px;
 }
 
 footer {
     height:50px;
-    background-image: url(Images/div_bg.jpeg);
+    background-color:rgb(210, 208, 208);
+    color:#3B3030
+}
+
+#container {
+    position: relative;
 }
 
 ul {
     list-style-type: none;
     margin:0;
-    padding:0;
+    padding:0px;
     display:flex;
+    position: absolute;
+    bottom: 0px; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 1345px; 
+    padding: 20px; 
 }
 
 li {
@@ -24,29 +35,34 @@ li {
 
 li a {
     display:block;
-    padding:8px;
-    color:#3B3030;
-    
-    background-color:rgba(250,240,230,0.7);
+    padding:4px;
+    color:#ffffff;
     text-decoration:none;
 }
 
 a[href$="html"]:hover {
+    transition-duration:0.5s;
     transform: scale(1.2);
-    color:rgb(147, 134, 134);
+    color:rgb(210, 208, 208);
     text-decoration: underline;
 }
 
 a:link {
-    color:blue;
-}
-
-a:hover {
-    color:#3B3030;
+    color:#ffffff;
 }
 
 a:visited {
-    color:#3B3030;
+    color:#ffffff;
+}
+
+#head-image {
+    width:100%;
+    -webkit-filter: blur(100%); 
+    filter: blur(100%);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1, h2, h3{
@@ -80,21 +96,7 @@ h6 {
 }
 
 p {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color:rgba(250,240,230,0.7);
-    background-origin: border-box;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     color: #3B3030;
-}
-
-#container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-    gap: 20px;
 }
 
 .services {
@@ -139,18 +141,49 @@ p {
     margin:30px;
 }
 
-#logo2{
-    float:left;
-    height:80px;
-    width: 80px;
-    margin:10px;
-}
-
 img[id^="help"] {
     margin:30px;
     height:170px;
     width:220px;
     border-radius: 5px;
+}
+
+article {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#p1, #p2 {
+    padding-top:100px;
+    width:1000px;
+}
+
+#p2 {
+    text-align: right;
+}
+
+#p3 {
+    text-align: center;
+    width: 900px;
+    padding-left:250px;
+}
+
+#heading {
+    text-align: center;
+}
+
+#head{
+    padding-top:50px;
+    color:#3B3030;
+}
+
+#head3{
+    color:#3B3030;
+    text-align: right;
+}
+
+#how{
+    text-align: center;
 }
 
 #help1:hover, #help2:hover, #help3:hover, #help4:hover {
@@ -164,6 +197,43 @@ img[id^="help"] {
     margin-left:170px;
 }
 
+.services h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 0.9rem;
+    background-color:rgba(246, 246, 246, 0.5);
+    margin-bottom: 15px;
+}   
+
+.heading {
+    text-align: center;
+}
+
+a[href$="com"] {
+    color:#3B3030;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Optional: adds space between the services */
+    margin-top: 30px; /* Optional: spacing from content above */
+}
+
+#services p {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color:rgba(255, 255, 255, 0.7);
+    background-origin: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #3B3030;
+}
+
+
 .cat {
     background:url('Images/cat.jpeg') no-repeat -62px -72px; 
     width: 110px;
@@ -176,37 +246,6 @@ img[id^="help"] {
     to{background-position-x:-300px;}
 }
 
-#head{
-    padding-top:50px;
-    color:white;
-}
-
-#head2{
-    color:white;
-}
-
-#head3{
-    text-align:right;
-}
-
-#how{
-    text-align: center;
-}
-
-#p1{
-    padding-top:110px;
-}
-
-#p2{
-    padding-top:100px;
-    text-align: right;
-}
-
-#p3{
-    text-align: center;
-
-}
-
 audio {
     transform: translate(560px);
 }
@@ -217,13 +256,14 @@ audio::-webkit-media-controls-panel {
 
 .app {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgba(250,240,230,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     width: 90%;
     max-width: 600px;
     margin: 100px auto;
     border-radius: 10px;
     padding:30px; 
     box-sizing: border-box;  
+    border:solid gray 2px;
 }
 
 .app h1 {
@@ -252,7 +292,7 @@ audio::-webkit-media-controls-panel {
 }
 
 .btn:hover {
-    background-color: #3b303067;
+    background-color: rgb(210, 208, 208);
 }
 
 #next {
